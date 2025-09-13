@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Directorio><ClientList><Cliente><Nombre>1</Nombre><Direccion>('127.0.0.1', 47178)</Direccion></Cliente><Cliente><Nombre>2</Nombre><Direccion>('127.0.0.1', 38844)</Direccion></Cliente></ClientList><Streamers><Streamer><Nombre>video_Ash_y_greninja_pelea_epica.mp4</Nombre><Direccion>('127.0.0.1', 44009)</Direccion></Streamer></Streamers><Ficheros><Fichero>{"video_Ash_y_greninja_pelea_epica.mp4": {"Titulo": "Ash y greninja pelea epica"}}</Fichero></Ficheros></Directorio>

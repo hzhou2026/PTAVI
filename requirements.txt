@@ -1,0 +1,19 @@
+asyncio
+json
+argparse
+xml.etree.ElementTree as ET
+os
+sys
+datetime
+math
+numpy
+aiortc
+av
+logging
+platform
+jinja2
+aiohttp
+opencv-python
+opencv-contrib-python
+opencv-python-headless
+opencv-contrib-python-headless

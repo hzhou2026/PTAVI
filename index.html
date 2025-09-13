@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videos Nostálgicos</title>
+    <style>
+        button {
+            padding: 8px 16px;
+            margin-right: 8px;
+        }
+
+        video {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        .option {
+            margin-bottom: 16px;
+        }
+
+        #media {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="option">
+        <input id="use-stun" type="checkbox" />
+        <label for="use-stun">Use STUN server</label>
+    </div>
+
+    {% for video in videos %}
+    <div class="video-section">
+        <h3>{{ titulos[loop.index0] }}</h3>
+        <button id="start-{{ video }}" onclick="startVideo('{{ video }}')">Start {{ video }}</button>
+        <button id="stop-{{ video }}" style="display: none" onclick="stopVideo('{{ video }}')">Stop</button>
+        <br>
+    </div>
+    {% endfor %}
+
+    <div id="media">
+        <h2>Reproductor de video</h2>
+        <audio id="audio" autoplay></audio>
+        <video id="video" autoplay playsinline></video>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
